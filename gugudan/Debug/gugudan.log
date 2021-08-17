@@ -1,0 +1,5 @@
+﻿  gugudan.cpp
+C:\Users\si129\source\repos\CTest\gugudan\gugudan.cpp(26,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\si129\source\repos\CTest\gugudan\gugudan.cpp(56,2): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Users\si129\source\repos\CTest\gugudan\gugudan.cpp(9,9): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
+  gugudan.vcxproj -> C:\Users\si129\source\repos\CTest\Debug\gugudan.exe
