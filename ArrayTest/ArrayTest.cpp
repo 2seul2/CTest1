@@ -290,7 +290,7 @@ void  sortSTU(STU* a, int n)   // a: 구조체의 포인터
 }
 
 
-void sortTest()
+void sortTest()        // 배열을 이용한 성적처리
 {
 	double f_kor = 0.3, f_eng = 0.7;
 	double tot[nArr];
@@ -369,7 +369,7 @@ void sortTestEX()        // 구조체를 이용한 성적처리 - 파일 입출�
 	fprintf(fout, "%-7s %-7s %-7s %-7s %-7s\n","  이름","  국어", "  영어", "  총점", "  평균");
 	for (int i = 0; i < nArr; i++)
 	{
-		printf("%7s %7d %7d %7.2f %7.2f\n",
+		fprintf(fout, "%7s %7d %7d %7.2f %7.2f\n",
 			student[i].name, student[i].kor, student[i].eng, student[i].tot, student[i].avg);
 	}
 
@@ -444,7 +444,7 @@ int main()
 	//solution1();
 	//SwapTest();
 	//sortTest();
-	//sortTestNew();
+	sortTestNew();
 	//VoidTest();
 	//StreamTest();
 	sortTestEX();
