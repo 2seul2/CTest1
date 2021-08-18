@@ -1,0 +1,43 @@
+﻿  ArrayTest.cpp
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(15,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(11,12): warning C4101: 'k' :참조되지 않은 지역 변수입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(11,9): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(51,33): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(43,9): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(43,6): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(77,9): warning C4477: 'printf' : 서식 문자열 '%x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int *'입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(77,9): warning C4313: 'printf': 서식 문자열의 '%x'이(가) 인수 1('int *' 형식)과(와) 충돌합니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(78,9): warning C4477: 'printf' : 서식 문자열 '%x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int *'입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(78,9): warning C4313: 'printf': 서식 문자열의 '%x'이(가) 인수 1('int *' 형식)과(와) 충돌합니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(79,9): warning C4477: 'printf' : 서식 문자열 '%x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int *'입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(79,9): warning C4313: 'printf': 서식 문자열의 '%x'이(가) 인수 1('int *' 형식)과(와) 충돌합니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(80,9): warning C4477: 'printf' : 서식 문자열 '%x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int (*)[2]'입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(80,9): warning C4313: 'printf': 서식 문자열의 '%x'이(가) 인수 1('int (*)[2]' 형식)과(와) 충돌합니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(82,9): warning C4477: 'printf' : 서식 문자열 '%x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int (*)[2]'입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(82,9): warning C4313: 'printf': 서식 문자열의 '%x'이(가) 인수 1('int (*)[2]' 형식)과(와) 충돌합니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(83,9): warning C4477: 'printf' : 서식 문자열 '%x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int (*)[2]'입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(83,9): warning C4313: 'printf': 서식 문자열의 '%x'이(가) 인수 1('int (*)[2]' 형식)과(와) 충돌합니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(84,9): warning C4477: 'printf' : 서식 문자열 '%x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int (*)[2]'입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(84,9): warning C4313: 'printf': 서식 문자열의 '%x'이(가) 인수 1('int (*)[2]' 형식)과(와) 충돌합니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(119,45): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(130,7): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(170,12): warning C4101: 'k' :참조되지 않은 지역 변수입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(254,12): warning C4101: 'k' :참조되지 않은 지역 변수입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(278,12): warning C4101: 'k' :참조되지 않은 지역 변수입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(297,12): warning C4101: 'k' :참조되지 않은 지역 변수입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(297,9): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(328,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(322,12): warning C4101: 'k' :참조되지 않은 지역 변수입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(322,9): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(353,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(354,15): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(355,29): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(356,29): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(357,29): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(351,12): warning C4101: 'k' :참조되지 않은 지역 변수입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(351,9): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(400,8): warning C4101: 'vp' :참조되지 않은 지역 변수입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(412,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(415,15): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(420,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  ArrayTest.vcxproj -> C:\Users\si129\source\repos\CTest1\x64\Debug\ArrayTest.exe

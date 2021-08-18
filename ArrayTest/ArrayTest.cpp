@@ -37,6 +37,7 @@ int score()
 
 	return 0;
 }
+
 int Good()
 {
 	int i, j, k;
@@ -68,6 +69,7 @@ int Good()
 
 	return 0;
 }
+
 int PointerTest()
 {
 	int a[3][2] = { 1, 2, 3, 4, 5, 6 };
@@ -83,9 +85,11 @@ int PointerTest()
 
 	return 0;
 }
+
 // function define 
 //     Prototype  :  int str_len(char *str)
 // 문자열 str을 받아서 해당 문자열의 길이를 되돌려 줌.
+
 int str_len(char* str)  // 배열이 아닌 포인터로 받음  [] == *
 {
 	//	return strlen(str);
@@ -98,6 +102,7 @@ int str_len(char* str)  // 배열이 아닌 포인터로 받음  [] == *
 	}
 	return ret;
 }
+
 int solution1()
 {
 	// 문1) scanf 함수를 이용하여 문자열을 입력후
@@ -133,9 +138,11 @@ int solution1()
 
 	return 0;
 }
+
 // function define 
 //     Prototype  :  void swap(int a, int b)
 // 정수 변수 a와 b의 값을 교환.
+
 void swap(int* a, int* b)	// a,b를 포인터로 선언하고 전달된 매개변수 값으로 설정 (초기화)
 {							// 포인터 사용방법 : 포인터가 가리키는 주소의 값 : *p
 							//					 주소 자체 : p
@@ -166,7 +173,7 @@ void  sort(int* a, int n)
 	{
 		for (j = i; j < n; j++)
 		{
-			if (a[i] < a[j]) swap(a + i, a + j); // =swap(&a[i], &a[j]); 
+			if (a[i] < a[j]) swap(a + i, a + j); // = swap(&a[i], &a[j]); 
 		}
 	}
 }
@@ -199,9 +206,11 @@ void swapEx2(const char** a, const char** b)
 //};
 //typedef struct student STU;
 typedef struct {
+	char name[10];
 	int kor;
 	int eng;
-	char name[10];
+	double tot;
+	double avg;
 } STU;
 
 void SWAP(void* a, void* b, int op)
@@ -212,7 +221,7 @@ void SWAP(void* a, void* b, int op)
 		*(char*)a = *(char*)b;
 		*(char*)b = c;
 	}
-	if (op == 4)	// int, flo
+	if (op == 4)	// int, float
 	{
 		int c = *(int*)a;
 		*(int*)a = *(int*)b;
@@ -224,13 +233,14 @@ void SWAP(void* a, void* b, int op)
 		*(double*)a = *(double*)b;
 		*(double*)b = c;
 	}
-	if (op == 18)	// STU
+	if (op == sizeof(STU))	// STU
 	{
 		STU c = *(STU*)a;
 		*(STU*)a = *(STU*)b;
 		*(STU*)b = c;
 	}
 }
+
 // 전역변수 : 이하의 함수에서 사용 가능
 const int nArr = 10;
 int kor[] = { 67, 70, 77, 65, 68, 72, 79, 55, 85, 61 };
@@ -263,6 +273,23 @@ void  sortEx(double* a, int n)
 	}
 }
 
+void  sortSTU(STU* a, int n)   // a: 구조체의 포인터
+{
+	int i, j, k;
+
+	for (i = 0; i < n; i++)
+	{
+		for (j = i; j < n; j++)
+		{
+			if ((a+i)->avg < (a+j)->avg)   // 구조체 포인터의 값 ===> a[i].avg < a[j].avg  // a+i: i번째 구조체의 avg  // a+j : j번째 구조체의 avg
+			{
+				SWAP(a + i, a + j, sizeof(STU));
+			}
+		}
+	}
+}
+
+
 void sortTest()
 {
 	double f_kor = 0.3, f_eng = 0.7;
@@ -273,7 +300,7 @@ void sortTest()
 	{
 		tot[i] = kor[i] * f_kor + eng[i] * f_eng;
 	}
-	printf("Original :\n");
+	printf("Original :\n\n");
 	printf("이름 : "); for (int i = 0; i < nArr; i++) printf("%7s ", name[i]); printf("\n\n");
 	printf("국어 : "); for (int i = 0; i < nArr; i++) printf("%7d ", kor[i]); printf("\n\n");
 	printf("영어 : "); for (int i = 0; i < nArr; i++) printf("%7d ", eng[i]); printf("\n\n");
@@ -281,14 +308,14 @@ void sortTest()
 
 	sortEx(tot, nArr);
 
-	printf("Sorted :\n");
+	printf("Sorted :\n\n");
 	printf("이름 : "); for (int i = 0; i < nArr; i++) printf("%7s ", name[i]); printf("\n\n");
 	printf("국어 : "); for (int i = 0; i < nArr; i++) printf("%7d ", kor[i]); printf("\n\n");
 	printf("영어 : "); for (int i = 0; i < nArr; i++) printf("%7d ", eng[i]); printf("\n\n");
 	printf("합계 : "); for (int i = 0; i < nArr; i++) printf("%7.2f ", tot[i]); printf("\n\n");
 }
 
-void sortTestNew()
+void sortTestNew()        // 구조체를 이용한 성적처리
 {
 	double f_kor = 0.3, f_eng = 0.7;
 	double tot[nArr];
@@ -317,6 +344,45 @@ void sortTestNew()
 	printf("합계 : "); for (int i = 0; i < nArr; i++) printf("%7.2f ", tot[i]); printf("\n\n");
 }
 
+// 문제) 성적표 파일을 fscanf 를 통해서 구조체로 읽어 들이기
+//       sorting 한 다음에 출력 방향을 fout을 이용해
+//       가로 스타일이 아닌 세로로 출력
+//       이름 국어 영어 총점 순으로(메모장처럼)
+void sortTestEX()        // 구조체를 이용한 성적처리 - 파일 입출력
+{
+	double f_kor = 0.3, f_eng = 0.7;
+	//double tot[nArr], avg[nArr];
+	int i, j, k;
+
+	FILE* fin = fopen("C:\\Users\\si129\\table1.txt", "r");
+	FILE* fout = fopen("C:\\Users\\si129\\table1.rpt", "w+b");
+	for (i = 0; i < nArr; i++) fscanf(fin, "%s", student[i].name);
+	for (i = 0; i < nArr; i++) fscanf(fin, "%d", &student[i].kor);
+	for (i = 0; i < nArr; i++) fscanf(fin, "%d", &student[i].eng);
+	for (i = 0; i < nArr; i++)
+	{
+		student[i].tot = student[i].kor + student[i].eng;
+		student[i].avg = student[i].tot / 2;
+	}
+
+	fprintf(fout, "Original :\n\n");
+	fprintf(fout, "%-7s %-7s %-7s %-7s %-7s\n","  이름","  국어", "  영어", "  총점", "  평균");
+	for (int i = 0; i < nArr; i++)
+	{
+		printf("%7s %7d %7d %7.2f %7.2f\n",
+			student[i].name, student[i].kor, student[i].eng, student[i].tot, student[i].avg);
+	}
+
+	sortSTU(student, nArr);
+
+	fprintf(fout, "\n\nSorted :\n\n");
+	for (int i = 0; i < nArr; i++)
+	{
+		fprintf(fout, "%7s %7d %7d %7.2f %7.2f\n",
+			student[i].name, student[i].kor, student[i].eng, student[i].tot, student[i].avg);
+	}
+}
+
 void VoidPrint(void* p, int i)
 {
 	if (i == 1)
@@ -340,6 +406,36 @@ void VoidTest()
 	VoidPrint(&a, 3);
 }
 
+void StreamTest()
+{
+	int m;
+	float d;
+	char buf[1024];
+
+	FILE* fin = fopen("C:\\Users\\si129\\aa.txt", "r");  // 만약 파일이 존재하지 않으면 NULL 반환 (오류)  // r : read
+	//FILE* fout0 = fopen("C:\\users\\si129\\aa.o0", "w");  // o : out  //write
+	//FILE* fout1 = fopen("C:\\users\\si129\\aa.o1", "a");  // a : append  // arr[10] -> 이렇게 하면 안됨
+	FILE* fout = fopen("C:\\Users\\si129\\aa.txt.o", "w+b");
+
+	if (fin != NULL)
+	{
+		//scanf("%d %f %s", &m, &d, buf);  // buf : 문자열 입력
+		fscanf(fin, "%d %f %s", &m, &d, buf);                       // scanf 와 fscanf 똑같음, 차이는 in, out
+		fprintf(fout, "정수 : %d\n실수 : %f\n문자열 : %s\n", m, d, buf);
+		printf("정수 : %d\n실수 : %f\n문자열 : %s\n", m, d, buf);
+
+		//while (1)
+		//{
+		//	if (fgets(buf, 1024, f) == NULL) break;
+		//	fputs(buf, stdout);
+		//	fputs(buf, fout0);
+		//	fputs(buf, fout1);
+		//	fputs(buf, fout2);
+		//}
+	}
+	else printf("입력 파일이 존재하지 않습니다.\n");
+}
+
 int main()
 {
 	//score();
@@ -348,6 +444,8 @@ int main()
 	//solution1();
 	//SwapTest();
 	//sortTest();
-	sortTestNew();
-	//VoidTest();dfsdfsdfsdfdsfsd
+	//sortTestNew();
+	//VoidTest();
+	//StreamTest();
+	sortTestEX();
 }

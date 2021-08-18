@@ -29,13 +29,13 @@ int main()
 		//	 printf(">1: One\n");
 		// }
 		// else if (k == 2) printf(">2: Two\n");
-		// else if (k == 2) printf(">3: Three\n");
-		// else if (k == 2) printf(">4: Four\n");
-		// else if (k == 2) printf(">5: Five\n");
-		// else if (k == 2) printf(">6: Six\n");
-		// else if (k == 2) printf(">7: Seven\n");
-		// else if (k == 2) printf(">8: Eight\n");
-		// else if (k == 2) printf(">9: Nine\n");
+		// else if (k == 3) printf(">3: Three\n");
+		// else if (k == 4) printf(">4: Four\n");
+		// else if (k == 5) printf(">5: Five\n");
+		// else if (k == 6) printf(">6: Six\n");
+		// else if (k == 7) printf(">7: Seven\n");
+		// else if (k == 8) printf(">8: Eight\n");
+		// else if (k == 9) printf(">9: Nine\n");
 		// else break;
 		switch (k)
 		{

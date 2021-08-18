@@ -1,0 +1,6 @@
+﻿  Hello.cpp
+C:\Users\si129\source\repos\CTest1\Hello\Hello.cpp(16,9): warning C4477: 'scanf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'const char **'입니다.
+C:\Users\si129\source\repos\CTest1\Hello\Hello.cpp(21,10): warning C4477: 'printf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'const char **'입니다.
+C:\Users\si129\source\repos\CTest1\Hello\Hello.cpp(16,3): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\si129\source\repos\CTest1\Hello\Hello.cpp(19,3): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\si129\source\repos\CTest1\Hello\Hello.cpp(29,2): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
