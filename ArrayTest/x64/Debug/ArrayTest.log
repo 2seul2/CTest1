@@ -26,18 +26,22 @@ C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(254,12): warning C410
 C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(278,12): warning C4101: 'k' :참조되지 않은 지역 변수입니다.
 C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(297,12): warning C4101: 'k' :참조되지 않은 지역 변수입니다.
 C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(297,9): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
-C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(328,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(322,12): warning C4101: 'k' :참조되지 않은 지역 변수입니다.
-C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(322,9): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
-C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(357,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(358,15): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(359,29): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(360,29): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(361,29): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(355,12): warning C4101: 'k' :참조되지 않은 지역 변수입니다.
-C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(355,9): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
-C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(403,8): warning C4101: 'vp' :참조되지 않은 지역 변수입니다.
-C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(415,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(418,15): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(423,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(329,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(323,12): warning C4101: 'k' :참조되지 않은 지역 변수입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(323,9): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(321,9): warning C4101: 'tot1' :참조되지 않은 지역 변수입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(367,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(368,15): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(370,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(372,28): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(373,28): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(374,28): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(397,2): warning C4996: 'fcloseall': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _fcloseall. See online help for details.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(356,12): warning C4101: 'k' :참조되지 않은 지역 변수입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(356,9): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(419,8): warning C4101: 'vp' :참조되지 않은 지역 변수입니다.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(431,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(434,15): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(439,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\si129\source\repos\CTest1\ArrayTest\ArrayTest.cpp(474,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   ArrayTest.vcxproj -> C:\Users\si129\source\repos\CTest1\x64\Debug\ArrayTest.exe

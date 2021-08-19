@@ -3,7 +3,7 @@
 #include <math.h>
 #include <conio.h>
 #include <time.h>
-#include <string.h>
+#include <string.h>  // 문자열 헤더 파일
 
 const int students = 20;
 int score()
@@ -53,11 +53,11 @@ int Good()
 		{
 			printf("%s %s \n ", good, mon);
 		}
-		else if (k < 18)
+		else if (k > 12 && k < 18)
 		{
 			printf("%s %s \n ", good, noon);
 		}
-		else if (k < 23)
+		else if (k > 18 && k < 23)
 		{
 			printf("%s %s \n ", good, even);
 		}
@@ -90,7 +90,7 @@ int PointerTest()
 //     Prototype  :  int str_len(char *str)
 // 문자열 str을 받아서 해당 문자열의 길이를 되돌려 줌.
 
-int str_len(char* str)  // 배열이 아닌 포인터로 받음  [] == *
+int str_len(char* str)  // 배열이 아닌 포인터로 받음  [] == *   // 문자열 길이 계산
 {
 	//	return strlen(str);
 	int ret = 0;
@@ -106,12 +106,12 @@ int str_len(char* str)  // 배열이 아닌 포인터로 받음  [] == *
 int solution1()
 {
 	// 문1) scanf 함수를 이용하여 문자열을 입력후
-	//    해당 문자열을 한 글자씩 공백(_)을 삽입하여
-	//	  출력하시오.
-	//    > 12345   ==>  1_2_3_4_5
+	//      해당 문자열을 한 글자씩 공백(_)을 삽입하여
+	//	    출력하시오.
+	//      > 12345   ==>  1_2_3_4_5
 	// 문2) scanf 함수를 이용하여 문자열을 입력후
-	//     getch() 함수를 이용하여 숫자 키를 누르면
-	//	   해당 위치의 문자를 출력하시오
+	//      getch() 함수를 이용하여 숫자 키를 누르면
+	//	    해당 위치의 문자를 출력하시오
 
 	char buf[100];  //	buffer : 버퍼 : 배열 == 포인터
 	int i, j, k;
@@ -165,8 +165,8 @@ int SwapTest()
 	return 0;
 }
 
-void  sort(int* a, int n)
-{
+void  sort(int* a, int n)   // a, b 를 포인터로 선언하고 전달된 매개변수 값으로 설정 (초기화)
+{                           // 포인터 사용방법 : 포인터가 가리키는 주소의 값 : *p
 	int i, j, k;
 
 	for (i = 0; i < n; i++)
@@ -192,8 +192,8 @@ void swapEx1(char* a, char* b)
 	*b = c;
 }
 
-void swapEx2(const char** a, const char** b)
-{
+void swapEx2(const char** a, const char** b)   // ** : String 의 배열 type  // stiring *(포인터) : 4 byte  // const char** a = const char* a[]
+{                                              // 스트링 배열도 1차원 배열로 볼 수 있다.
 	const char* c = *a;
 	*a = *b;
 	*b = c;
@@ -213,15 +213,15 @@ typedef struct {
 	double avg;
 } STU;
 
-void SWAP(void* a, void* b, int op)
+void SWAP(void* a, void* b, int op)    // op : option
 {
-	if (op == 1)	// char
+	if (op == 1)	// char 를 뜻함
 	{
 		char c = *(char*)a;
 		*(char*)a = *(char*)b;
 		*(char*)b = c;
 	}
-	if (op == 4)	// int, float
+	if (op == 4)	// int, float = 4 byte
 	{
 		int c = *(int*)a;
 		*(int*)a = *(int*)b;
@@ -245,7 +245,7 @@ void SWAP(void* a, void* b, int op)
 const int nArr = 10;
 int kor[] = { 67, 70, 77, 65, 68, 72, 79, 55, 85, 61 };
 int eng[] = { 70, 75, 80, 60, 65, 55, 80, 95, 67, 84 };
-char nam[] = "ABCDEFGHIJK"; //문자열 포인터로 변경 : "홍길동" "홍길이" "홍길삼" "홍길사" "홍길오" "길육" 길칠 길팔 길구 
+char nam[] = "ABCDEFGHIJK"; // 문자열 포인터로 변경 : "홍길동" "홍길이" "홍길삼" "홍길사" "홍길오" "길육" 길칠 길팔 길구 
 const char* name[] = { "홍길동", "홍길이", "홍길삼", "홍길사", "홍길오", "맹일", "맹이", "맹삼", "맹사", "맹오" };
 STU student[nArr];
 
@@ -259,10 +259,10 @@ void  sortEx(double* a, int n)
 		{
 			if (a[i] < a[j])
 			{
-				//swapEx(a + i, a + j); // =swap(&a[i], &a[j]);  // tot : double
+				//swapEx(a + i, a + j);             // = swap(&a[i], &a[j]);  // tot : double
 				//swap(kor + i, kor + j);
 				//swap(eng + i, eng + j);
-				//swapEx2(name + i, name + j);
+				//swapEx2(name + i, name + j);      // char* = string
 				SWAP(a + i, a + j, 8);
 				SWAP(student + i, student + j, 18);
 				//SWAP(kor + i, kor + j, 4);
@@ -292,13 +292,13 @@ void  sortSTU(STU* a, int n)   // a: 구조체의 포인터
 
 void sortTest()        // 배열을 이용한 성적처리
 {
-	double f_kor = 0.3, f_eng = 0.7;
+	double f_kor = 0.3, f_eng = 0.7;   // 가중치
 	double tot[nArr];
 	int i, j, k;
 
 	for (i = 0; i < nArr; i++)
 	{
-		tot[i] = kor[i] * f_kor + eng[i] * f_eng;
+		tot[i] = kor[i] * f_kor + eng[i] * f_eng;   // 국어점수*가중치 + 영어점수*가중치
 	}
 	printf("Original :\n\n");
 	printf("이름 : "); for (int i = 0; i < nArr; i++) printf("%7s ", name[i]); printf("\n\n");
@@ -318,7 +318,8 @@ void sortTest()        // 배열을 이용한 성적처리
 void sortTestNew()        // 구조체를 이용한 성적처리
 {
 	double f_kor = 0.3, f_eng = 0.7;
-	double tot[nArr];
+	double tot1[nArr];
+	double* tot = (double* )malloc(sizeof(double) * nArr);
 	int i, j, k;
 
 	for (i = 0; i < nArr; i++)
@@ -354,33 +355,48 @@ void sortTestEX()        // 구조체를 이용한 성적처리 - 파일 입출�
 	//double tot[nArr], avg[nArr];
 	int i, j, k;
 
+	//***************************************************************************
+	//***************************************************************************
+	//***************************************************************************
+	int num;        // file 에서 read (읽어 와야 됨)
+	STU* students;  //malloc 으로 메모리 확보
+	//***************************************************************************
+	//***************************************************************************
+	//***************************************************************************
+
 	FILE* fin = fopen("C:\\Users\\si129\\table1.txt", "r");
 	FILE* fout = fopen("C:\\Users\\si129\\table1.rpt", "w+b");
-	for (i = 0; i < nArr; i++) fscanf(fin, "%s", student[i].name);
-	for (i = 0; i < nArr; i++) fscanf(fin, "%d", &student[i].kor);
-	for (i = 0; i < nArr; i++) fscanf(fin, "%d", &student[i].eng);
-	for (i = 0; i < nArr; i++)
+
+	fscanf(fin, "%d", &num);
+	students = (STU *)malloc(sizeof(STU)*num);
+	for (i = 0; i < num; i++) fscanf(fin, "%s", students[i].name);
+	for (i = 0; i < num; i++) fscanf(fin, "%d", &students[i].kor);
+	for (i = 0; i < num; i++) fscanf(fin, "%d", &students[i].eng);
+	for (i = 0; i < num; i++)
 	{
-		student[i].tot = student[i].kor + student[i].eng;
-		student[i].avg = student[i].tot / 2;
+		students[i].tot = students[i].kor + students[i].eng;
+		students[i].avg = students[i].tot / 2;
 	}
 
 	fprintf(fout, "Original :\n\n");
 	fprintf(fout, "%-7s %-7s %-7s %-7s %-7s\n","  이름","  국어", "  영어", "  총점", "  평균");
-	for (int i = 0; i < nArr; i++)
+	for (int i = 0; i < num; i++)
 	{
 		fprintf(fout, "%7s %7d %7d %7.2f %7.2f\n",
-			student[i].name, student[i].kor, student[i].eng, student[i].tot, student[i].avg);
+			students[i].name, students[i].kor, students[i].eng, students[i].tot, students[i].avg);  // students[i] == students+i (밑에 식이랑 비교했을 때 둘은 같은 식)
 	}
 
-	sortSTU(student, nArr);
+	sortSTU(students, num);
 
 	fprintf(fout, "\n\nSorted :\n\n");
-	for (int i = 0; i < nArr; i++)
+	for (int i = 0; i < num; i++)
 	{
-		fprintf(fout, "%7s %7d %7d %7.2f %7.2f\n",
-			student[i].name, student[i].kor, student[i].eng, student[i].tot, student[i].avg);
+		fprintf(stdout, "%7s %7d %7d %7.2f %7.2f\n",  // fout 을 stdout으로 바꿔 주니 console == monitor 가 됨
+			(students+i)->name, (students + i)->kor, (students + i)->eng, (students + i)->tot, (students + i)->avg);  // [ ] == *  // students[i] == students+i  // . 대신 ->
 	}
+	fcloseall();    // 모든 open 파일을 닫아라.
+	//fclose(fout);
+	//fclose(fin);
 }
 
 void VoidPrint(void* p, int i)
@@ -390,7 +406,7 @@ void VoidPrint(void* p, int i)
 		char* cp = (char*)p;
 		printf("%c\n", *cp);
 	}
-	if (i == 2)	printf("%d\n", *(int*)p);
+	if (i == 2)	printf("%d\n", *(int*)p);    // 위에 식을 축약
 	if (i == 3)	printf("%f\n", *(double*)p);
 }
 
@@ -401,7 +417,7 @@ void VoidTest()
 	double a = 1.414;
 
 	void* vp;
-	VoidPrint(&c, 1);
+	VoidPrint(&c, 1);   // c 를 축양갷서 쓸 수 있다고 보여줌
 	VoidPrint(&n, 2);
 	VoidPrint(&a, 3);
 }
@@ -436,16 +452,64 @@ void StreamTest()
 	else printf("입력 파일이 존재하지 않습니다.\n");
 }
 
-int main()
+int main()   // 소스코드 한 곳에 모으기
 {
-	//score();
-	//Good();
-	//PointerTest();
-	//solution1();
-	//SwapTest();
-	//sortTest();
-	sortTestNew();
-	//VoidTest();
-	//StreamTest();
-	sortTestEX();
+	while (1)
+	{
+		int k;
+		printf("\n\n\n ==================== \n\n"
+			"  1.score();\n"
+			"  2.Good();\n"
+			"  3.PointerTest();\n"
+			"  4.solution1();\n"
+			"  5.SwapTest();\n"
+			"  6.sortTest();\n"
+			"  7.sortTestNew();\n"
+			"  8.VoidTest();\n"
+			"  9.StreamTest();\n"
+			"  10.sortTestEX();\n"
+			"  0.Exit\n\n"
+			" ==================== \n"
+			"   Selct Menu     ");
+		scanf("%d", &k);
+
+		switch (k)
+		{
+		case 1: score();           break;   // 1.
+		case 2: Good();            break;   // 2.
+		case 3: PointerTest();     break;   // 3.
+		case 4: solution1();       break;   // 4.
+		case 5: SwapTest();        break;   // 5.
+		case 6: sortTest();        break;   // 6.
+		case 7: sortTestNew();     break;   // 7.
+		case 8: VoidTest();        break;   // 8.
+		case 9: StreamTest();      break;   // 9.
+		case 10:sortTestEX();      break;   // 10.
+		default: return 0;
+		}
+
+	}
 }
+
+	//if (k == 1) score();               //1.
+	//else if (k == 2) Good();           //2.   // => 별로 좋지 않음.
+	//else if (k == 3) PointerTest();    // 3.
+	//else if (k == 4) solution1();      // 4.
+	//else if (k == 5) SwapTest();       // 5.
+	//else if (k == 6) sortTest();       // 6
+	//else if (k == 7) sortTestNew();    // 7.
+	//else if (k == 8) VoidTest();       // 8.
+	//else if (k == 9) StreamTest();     // 9.
+	//else if (k == 10) sortTestEX();    // 10.
+	
+
+	//score();         //1.
+	//Good();          //2.
+	//PointerTest();   // 3.
+	//solution1();     // 4.
+	//SwapTest();      // 5.
+	//sortTest();      // 6.
+	//sortTestNew();   // 7.
+	//VoidTest();      // 8.
+	//StreamTest();    // 9.
+	//sortTestEX();    // 10.

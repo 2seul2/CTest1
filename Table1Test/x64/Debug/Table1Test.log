@@ -1,17 +1,4 @@
-﻿  Table1Test.cpp
-C:\Users\si129\source\repos\CTest1\Table1Test\Table1Test.cpp(18,15): warning C4477: 'fscanf' : 서식 문자열 '%f'에 'float *' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'int (*)[10]'입니다.
-C:\Users\si129\source\repos\CTest1\Table1Test\Table1Test.cpp(18,15): warning C4477: 'fscanf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 3의 형식이 'const char **'입니다.
-C:\Users\si129\source\repos\CTest1\Table1Test\Table1Test.cpp(19,20): warning C4477: 'fprintf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int *'입니다.
-C:\Users\si129\source\repos\CTest1\Table1Test\Table1Test.cpp(19,20): warning C4313: 'fprintf': 서식 문자열의 '%d'이(가) 인수 1('int *' 형식)과(와) 충돌합니다.
-C:\Users\si129\source\repos\CTest1\Table1Test\Table1Test.cpp(19,20): warning C4477: 'fprintf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'int *'입니다.
-C:\Users\si129\source\repos\CTest1\Table1Test\Table1Test.cpp(19,20): warning C4313: 'fprintf': 서식 문자열의 '%d'이(가) 인수 2('int *' 형식)과(와) 충돌합니다.
-C:\Users\si129\source\repos\CTest1\Table1Test\Table1Test.cpp(19,20): warning C4477: 'fprintf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 3의 형식이 'const char **'입니다.
-C:\Users\si129\source\repos\CTest1\Table1Test\Table1Test.cpp(20,13): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int *'입니다.
-C:\Users\si129\source\repos\CTest1\Table1Test\Table1Test.cpp(20,13): warning C4313: 'printf': 서식 문자열의 '%d'이(가) 인수 1('int *' 형식)과(와) 충돌합니다.
-C:\Users\si129\source\repos\CTest1\Table1Test\Table1Test.cpp(20,13): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'int *'입니다.
-C:\Users\si129\source\repos\CTest1\Table1Test\Table1Test.cpp(20,13): warning C4313: 'printf': 서식 문자열의 '%d'이(가) 인수 2('int *' 형식)과(와) 충돌합니다.
-C:\Users\si129\source\repos\CTest1\Table1Test\Table1Test.cpp(20,13): warning C4477: 'printf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 3의 형식이 'const char **'입니다.
-C:\Users\si129\source\repos\CTest1\Table1Test\Table1Test.cpp(14,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\si129\source\repos\CTest1\Table1Test\Table1Test.cpp(15,15): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\si129\source\repos\CTest1\Table1Test\Table1Test.cpp(18,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  Table1Test.vcxproj -> C:\Users\si129\source\repos\CTest1\x64\Debug\Table1Test.exe
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: 중간 디렉터리(x64\Debug\)에 다른 프로젝트(Table1Test.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
+  문자정렬.cpp
+MSVCRTD.lib(exe_main.obj) : error LNK2019: main"int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) 함수에서 참조되는 확인할 수 없는 외부 기호
+C:\Users\si129\source\repos\CTest1\x64\Debug\문자정렬.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.
